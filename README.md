@@ -1,1 +1,1 @@
-# Class_Balancer
+The *Class_Balancer* python class is a comprehensive solution to the problem of imbalanced datasets. For a large variety of machine learning algorithms, class labels should typically be well-balanced to ensure highest performance when tasked with differentiation between classes. With the *Class_Balancer*, datasets are balanced by randomly oversampling from marginalized classes. However, when datasets are modified in this manner, the model learns a fictitious distribution of prior probabilities for each class.
