@@ -253,11 +253,10 @@ class Class_Balancer():
         Beta_Log_Odds = Log_Odds + Betas
         
         #Softmax partition function
-        Q = np.sum(np.e**Beta_Log_Odds, axis=1)
+        Q = np.sum(np.e**Beta_Log_Odds, axis=1).reshape(-1,1)
         
         #Compute final probabilities
         Recovered_Probs = np.e**(Beta_Log_Odds) / Q
         
         return Recovered_Probs
-
 
